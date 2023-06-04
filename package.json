@@ -1,7 +1,7 @@
 {
   "name": "connect2mongodb",
-  "version": "0.0.1",
-  "description": "Dynamically Connect To MongoDB Databse & Close Connection",
+  "version": "0.1.0",
+  "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/Capta1nRaj/connect2mongodb.git"
   },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mognoose",
+    "mongo",
+    "dotenv",
+    "database",
+    "db",
+    "official",
+    "collection",
+    "manage-mongo",
+    "connect",
+    "web-based"
+  ],
   "author": "Priyal \"Capta1n\" Raj",
   "license": "ISC",
   "bugs": {
