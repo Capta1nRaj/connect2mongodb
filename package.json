@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,10 @@
     "collection",
     "manage-mongo",
     "connect",
-    "web-based"
+    "web-based",
+    "front-end",
+    "backend",
+    "function"
   ],
   "author": "Priyal \"Capta1n\" Raj",
   "license": "ISC",
