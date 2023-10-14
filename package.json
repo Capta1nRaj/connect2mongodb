@@ -1,8 +1,9 @@
 {
   "name": "connect2mongodb",
-  "version": "0.4.6",
+  "version": "1.0.0-beta.0",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

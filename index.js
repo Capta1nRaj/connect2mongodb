@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
-require("dotenv").config();
+import mongoose from 'mongoose';
+import { config } from 'dotenv';
+config();
 
 // Just Use MONGO_URI = Your MongoURI In .env but without '' String
 const userMongoDBLink = process.env.MONGO_URI || process.env.MONGODB_URI;
@@ -40,4 +41,4 @@ async function disconnect2MongoDB() {
     }
 }
 
-module.exports = { connect2MongoDB, disconnect2MongoDB };
+export { connect2MongoDB, disconnect2MongoDB };
