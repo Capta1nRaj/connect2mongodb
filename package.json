@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "index.js",
   "type": "module",
