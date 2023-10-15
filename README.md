@@ -31,7 +31,7 @@ This module will atuomatically fetch your ***MONGODB_URI*** from the ***.env***,
 ## Import the module:-
 
 ```js
-const { connect2MongoDB, disconnect2MongoDB } = require('connect2mongodb');
+import { connect2MongoDB, disconnect2MongoDB } from 'connect2mongodb'
 ```
 
 ## To Connect:-
@@ -79,7 +79,7 @@ This module will atuomatically fetch your ***MONGO_URI*** from the ***.env***, b
 ## Import the module:-
 
 ```js
-const { connect2MongoDB, disconnect2MongoDB } = require('connect2mongodb');
+import { connect2MongoDB, disconnect2MongoDB } from 'connect2mongodb'
 ```
 
 ## To Connect:-
