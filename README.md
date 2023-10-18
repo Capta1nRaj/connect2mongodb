@@ -6,10 +6,10 @@ npm i connect2mongodb
 
 # Warning:-
 
-Make sure you must have installed exact same version i.e.:- **mongoose@7.6.2,** in NextJS/Express Server.
+Make sure you must have installed exact same version i.e.:- **mongoose@7.6.3,** in NextJS/Express Server.
 
 ```js
-npm i mongoose@7.6.2
+npm i mongoose@7.6.3
 ```
 
 Otherwise it will connect to the DB, but starts giving error while trying to access the DB.
