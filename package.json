@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "index.js",
   "type": "module",
@@ -37,6 +37,6 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.6.4"
+    "mongoose": "^8.0.0"
   }
 }
