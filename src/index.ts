@@ -5,12 +5,12 @@ config();
 // Just Use MONGO_URI = Your MongoURI In .env but without '' String
 const userMongoDBLink = process.env.MONGO_URI || process.env.MONGODB_URI;
 
-async function connect2MongoDB(databaseName) {
+async function connect2MongoDB(databaseName: string | undefined = undefined) {
 
     // If/Else Is Used To Check Whether Database Name Is Defined Or Not
     if (databaseName === undefined) {
         try {
-            const MongoDBUrlWithDB = userMongoDBLink;
+            const MongoDBUrlWithDB = userMongoDBLink as string;
             // Connecting To The MogoDB
             await mongoose.connect(MongoDBUrlWithDB);
             return true;
@@ -37,7 +37,8 @@ async function disconnect2MongoDB() {
         return true;
         // return console.log("Disconnected from MongoDB! 👋");
     } catch (error) {
-        return error;
+        console.log(error);
+        return false;
     }
 }
 
