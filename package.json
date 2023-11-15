@@ -6,8 +6,10 @@
   "type": "module",
   "types": "lib/index.d.ts",
   "scripts": {
+    "clean": "rimraf lib/",
+    "lint": "npx eslint .",
     "build": "tsc",
-    "prepare": "npm run build"
+    "start": "npm run clean && npm rum lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,10 @@
     "mongoose": "^8.0.0"
   },
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
   },
-  "files":["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }

@@ -6,28 +6,25 @@ config();
 const userMongoDBLink = process.env.MONGO_URI || process.env.MONGODB_URI;
 
 async function connect2MongoDB(databaseName: string | undefined = undefined) {
+    if (!userMongoDBLink) {
+        console.error("MongoDB URI is not defined in environment variables.");
+        return false;
+    }
 
-    // If/Else Is Used To Check Whether Database Name Is Defined Or Not
-    if (databaseName === undefined) {
-        try {
-            const MongoDBUrlWithDB = userMongoDBLink as string;
-            // Connecting To The MogoDB
-            await mongoose.connect(MongoDBUrlWithDB);
-            return true;
-        } catch (error) {
-            console.log(error);
-            return false;
-        }
-    } else if (databaseName !== undefined) {
-        try {
-            const MongoDBUrlWithDB = userMongoDBLink + databaseName;
-            // Connecting To The MogoDB
-            await mongoose.connect(MongoDBUrlWithDB);
-            return true;
-        } catch (error) {
-            console.log(error);
-            return false;
-        }
+    const mongoDBUri = databaseName ? `${userMongoDBLink}/${databaseName}` : userMongoDBLink;
+
+    try {
+        await mongoose.connect(mongoDBUri);
+        mongoose.connection.on("connected", () => {
+            console.log("MongoDB connected successfully to", mongoDBUri);
+        });
+        mongoose.connection.on("error", (err) => {
+            console.error("MongoDB connection error:", err);
+        });
+        return true;
+    } catch (error) {
+        console.error("Error connecting to MongoDB:", error);
+        return false;
     }
 }
 
