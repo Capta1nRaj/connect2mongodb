@@ -11,7 +11,7 @@ async function connect2MongoDB(databaseName: string | undefined = undefined) {
         return false;
     }
 
-    const mongoDBUri = databaseName ? `${userMongoDBLink}/${databaseName}` : userMongoDBLink;
+    const mongoDBUri = databaseName ? `${userMongoDBLink}${databaseName}` : userMongoDBLink;
 
     try {
         await mongoose.connect(mongoDBUri);
