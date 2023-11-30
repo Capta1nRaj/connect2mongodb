@@ -16,7 +16,7 @@ async function connect2MongoDB(databaseName: string | undefined = undefined) {
     try {
         await mongoose.connect(mongoDBUri);
         mongoose.connection.on("connected", () => {
-            console.log("MongoDB connected successfully to", mongoDBUri);
+            // console.log("MongoDB connected successfully.");
         });
         mongoose.connection.on("error", (err) => {
             console.error("MongoDB connection error:", err);
