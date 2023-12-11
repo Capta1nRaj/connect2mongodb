@@ -1,3 +1,22 @@
+<p align="center">
+  <a href="https://github.com/Capta1nRaj/connect2mongodb" target="_blank"><img width="400px" src="https://www.priyalraj.com/_next/image?url=%2Fassets%2Fimages%2FMyProjectsSectionImages%2Fconnect2mongodb.png&w=1080&q=75" /></a>
+  <h3 align="center">Connect2MongoDB</h3>
+  <p align="center" style="align: center;">
+      <a href="https://github.com/Capta1nRaj/connect2mongodb/stargazers">
+         <img src="https://img.shields.io/github/stars/Capta1nRaj/connect2mongodb" alt="Github Stars" />
+      </a>
+      <a href="https://github.com/Capta1nRaj/connect2mongodb/blob/main/LICENSE">
+         <img src="https://img.shields.io/github/license/Capta1nRaj/connect2mongodb" alt="Licence" />
+      </a>
+      <a href="https://www.npmtrends.com/connect2mongodb">
+         <img src="https://img.shields.io/npm/dm/connect2mongodb" alt="Downloads" />
+      </a>
+      <a href="https://bundlephobia.com/package/connect2mongodb@1.0.9">
+         <img src="https://img.shields.io/bundlephobia/min/connect2mongodb@1.0.9" alt="Size" />
+      </a>
+   </p>
+</p>
+
 # Installation:-
 
 ```js
