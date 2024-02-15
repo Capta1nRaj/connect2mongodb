@@ -11,8 +11,8 @@
       <a href="https://www.npmtrends.com/connect2mongodb">
          <img src="https://img.shields.io/npm/dm/connect2mongodb" alt="Downloads" />
       </a>
-      <a href="https://bundlephobia.com/package/connect2mongodb@1.0.9">
-         <img src="https://img.shields.io/bundlephobia/min/connect2mongodb@1.0.9" alt="Size" />
+      <a href="https://bundlephobia.com/package/connect2mongodb@1.1.13">
+         <img src="https://img.shields.io/bundlephobia/min/connect2mongodb@1.1.13" alt="Size" />
       </a>
    </p>
 </p>
@@ -25,10 +25,10 @@ npm i connect2mongodb
 
 # Warning:-
 
-Make sure you must have installed exact same version i.e.:- **mongoose@8.1.1,** in NextJS/Express Server.
+Make sure you must have installed exact same version i.e.:- **mongoose@8.1.2,** in NextJS/Express Server.
 
 ```js
-npm i mongoose@8.1.1
+npm i mongoose@8.1.2
 ```
 
 Otherwise it will connect to the DB, but starts giving error while trying to access the DB.
