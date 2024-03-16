@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "lib/index.js",
   "type": "module",
@@ -9,7 +9,7 @@
     "clean": "rimraf lib/",
     "lint": "npx eslint .",
     "build": "tsc",
-    "start": "npm run clean && npm rum lint && npm run build"
+    "start": "npm run clean && npm rum lint && npm run build && nodemon  lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^8.2.1"
+    "mongoose": "^8.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",
