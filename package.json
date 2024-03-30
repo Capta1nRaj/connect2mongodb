@@ -11,7 +11,8 @@
     "build": "tsc",
     "start": "npm run clean && npm rum lint && npm run build",
     "publish": "npm run clean && npm rum lint && npm run build && npm publish",
-    "publishBeta": "npm run clean && npm rum lint && npm run build && npm publish --beta"
+    "publishBeta": "npm run clean && npm rum lint && npm run build && npm publish --beta",
+    "test": "rimraf node_modules/ && npm i && npm link connect2mongodb && cd ./test && node index.js"
   },
   "repository": {
     "type": "git",
