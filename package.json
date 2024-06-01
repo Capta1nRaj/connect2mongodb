@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.1.26",
+  "version": "1.1.27",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "lib/index.js",
   "type": "module",
@@ -10,7 +10,8 @@
     "clean-node-modules": "rimraf node_modules/",
     "lint": "npx eslint .",
     "build": "npm run clean-lib && npm rum lint && tsc",
-    "test": "npm run update && npm run clean-node-modules && npm i && npm run build && npm link connect2mongodb && cd ./test && node index.js && npm unlink connect2mongodb",
+    "test": "npm run build && cd ./test && npm link connect2mongodb && node ./index.js",
+    "finalTest": "npm run update && npm run clean-node-modules && npm i && npm run build && npm link connect2mongodb && cd ./test && node index.js && npm unlink connect2mongodb",
     "publish": "npm publish",
     "publish-beta": "npm publish --beta",
     "update": "ncu -u"
@@ -45,10 +46,10 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.13.0",
     "rimraf": "^5.0.7",
     "typescript": "^5.4.5"
   },
