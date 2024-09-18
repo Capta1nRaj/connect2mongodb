@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.1.39",
+  "version": "1.1.40",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "lib/index.js",
   "type": "module",
@@ -45,11 +45,11 @@
   "homepage": "https://github.com/Capta1nRaj/connect2mongodb#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.20.0",
-    "mongoose": "^8.6.2"
+    "express": "^4.21.0",
+    "mongoose": "^8.6.3"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
+    "@types/node": "^22.5.5",
     "rimraf": "^6.0.1",
     "typescript": "^5.6.2"
   },
