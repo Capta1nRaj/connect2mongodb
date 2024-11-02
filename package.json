@@ -1,6 +1,6 @@
 {
   "name": "connect2mongodb",
-  "version": "1.1.45",
+  "version": "1.1.46",
   "description": "Dynamically Connect to MongoDB databse & close connection.",
   "main": "lib/index.js",
   "type": "module",
@@ -14,8 +14,8 @@
     "finalTest": "npm run update && npm run clean-node-modules && npm i && npm run build && npm link connect2mongodb && cd ./test && node index.js && npm unlink connect2mongodb",
     "publish": "npm publish",
     "publish-beta": "npm publish --beta",
-    "update": "ncu -u",
-    "commit": "git add . && git commit -m \"Updated to mongoose 8.7.3\" && git push origin main"
+    "update": "npx npm-check-updates -u",
+    "commit": "git add . && git commit -m \"Updated to mongoose 8.8.0\" && git push origin main"
   },
   "repository": {
     "type": "git",
@@ -47,10 +47,10 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.7.3"
+    "mongoose": "^8.8.0"
   },
   "devDependencies": {
-    "@types/node": "^22.8.1",
+    "@types/node": "^22.8.6",
     "rimraf": "^6.0.1",
     "typescript": "^5.6.3"
   },
